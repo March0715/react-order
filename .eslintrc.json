@@ -1,0 +1,108 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    "max-depth": ["error", 4],
+    "max-statements": ["error", 25],
+    "max-params": ["error", 4],
+    "max-nested-callbacks": ["error", 4],
+    // 暂时 80
+    "max-lines-per-function": ["error", 80],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-console": ["error"],
+    "quotes": [2, "single"],
+    "no-use-before-define": 2,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/ban-types": 0,
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
+    "prettier/prettier": [
+      "error",
+      {
+       "singleQuote":true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "import/prefer-default-export": 0,
+    "import/default": 0,
+    "prefer-arrow-callback": 0,
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "function",
+        "next": "function"
+      },
+      {
+        "blankLine": "always",
+        "prev": "class",
+        "next": "class"
+      },
+      {
+        "blankLine": "always",
+        "prev": "function",
+        "next": "class"
+      },
+      {
+        "blankLine": "always",
+        "prev": "class",
+        "next": "function"
+      },
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "import",
+        "next": "import"
+      },
+      {
+        "blankLine": "always",
+        "prev": "export",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "export"
+      },
+      {
+        "blankLine": "any",
+        "prev": "export",
+        "next": "export"
+      }
+    ]
+  }
+}
