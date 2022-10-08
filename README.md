@@ -1,4 +1,11 @@
 利用react实现购物订单组件
+包含以下功能：
+- 搜索栏
+- 订单的显示与状态间的切换
+- 当订单数为0时的占位实现
+- 订单的删除（前端）
+- 推荐功能
+- loading状态
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
